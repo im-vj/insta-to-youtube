@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram to YouTube</title>
+</head>
+<body>
+  <h1>Upload Instagram Reels to YouTube</h1>
+  <form method="post">
+    <input type="text" name="insta_link" placeholder="Paste Instagram link" required>
+    <button type="submit">Submit</button>
+  </form>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for category, message in messages %}
+      <p class="{{ category }}">{{ message }}</p>
+    {% endfor %}
+  {% endwith %}
+</body>
+</html>

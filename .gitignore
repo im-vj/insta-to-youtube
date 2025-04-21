@@ -1,0 +1,8 @@
+# Ignore environment and credentials
+.env
+config/configit status
+g.json
+venv/
+__pycache__/
+*.pyc
+downloads/
